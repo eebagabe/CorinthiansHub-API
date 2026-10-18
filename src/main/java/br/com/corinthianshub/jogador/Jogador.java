@@ -45,14 +45,12 @@ public class Jogador {
 
 	private Integer jogosSelecao;
 
-	private Long valorMercadoEuros;
-
-	private LocalDate valorMercadoAtualizadoEm;
+	private Long valorMercadoReais;
 
 	private LocalDate fimContrato;
 
-	@Column(name = "salario_anual_estimado_usd")
-	private long salarioAnualEstimadoUsd;
+	// estimativa (o clube nao divulga salarios); 0 = nao encontrado
+	private long salarioMensalReais;
 
 	private LocalDate atualizadoEm;
 
@@ -110,20 +108,16 @@ public class Jogador {
 		return jogosSelecao;
 	}
 
-	public Long getValorMercadoEuros() {
-		return valorMercadoEuros;
-	}
-
-	public LocalDate getValorMercadoAtualizadoEm() {
-		return valorMercadoAtualizadoEm;
+	public Long getValorMercadoReais() {
+		return valorMercadoReais;
 	}
 
 	public LocalDate getFimContrato() {
 		return fimContrato;
 	}
 
-	public long getSalarioAnualEstimadoUsd() {
-		return salarioAnualEstimadoUsd;
+	public long getSalarioMensalReais() {
+		return salarioMensalReais;
 	}
 
 	public LocalDate getAtualizadoEm() {
