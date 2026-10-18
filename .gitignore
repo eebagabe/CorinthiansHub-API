@@ -35,3 +35,4 @@ build/
 ### Segredos ###
 .env
 .env.production
+__pycache__/
