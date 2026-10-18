@@ -37,5 +37,18 @@ services:
     ports:
       - '127.0.0.1:8081:8081'
 
+  # Expoe a API na internet com HTTPS, sem abrir portas na VPS. Tunel proprio (nao e o do alvestore).
+  # Ligar com: docker compose -f compose.prod.yaml --env-file .env.production --profile tunel up -d
+  cloudflared:
+    image: 'cloudflare/cloudflared:2025.10.0'
+    container_name: corinthianshub-tunnel
+    profiles: ['tunel']
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN:-}
+    depends_on:
+      - api
+
 volumes:
   pgdata:
