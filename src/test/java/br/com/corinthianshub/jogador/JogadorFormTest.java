@@ -15,8 +15,8 @@ class JogadorFormTest {
 
 	private final Validator validador = Validation.buildDefaultValidatorFactory().getValidator();
 
-	private static JogadorForm form(int numero, String posicao, long salario, String fotoUrl) {
-		return new JogadorForm(numero, "Hugo Souza", posicao, "BRA", fotoUrl, null, LocalDate.of(1999, 1, 31), 139,
+	private static JogadorForm form(int numero, String posicao, long salario) {
+		return new JogadorForm(numero, "Hugo Souza", posicao, "BRA", null, LocalDate.of(1999, 1, 31), 139,
 				139, 57, 2, 11_000_000L, salario, LocalDate.of(2028, 12, 31), List.of("Campeao Paulista"), null);
 	}
 
@@ -26,18 +26,18 @@ class JogadorFormTest {
 
 	@Test
 	void aceitaJogadorValido() {
-		assertThat(camposInvalidos(form(1, "Goleiro", 375_000, "https://exemplo.com/foto.webp"))).isEmpty();
+		assertThat(camposInvalidos(form(1, "Goleiro", 375_000))).isEmpty();
 	}
 
 	@Test
-	void rejeitaPosicaoDesconhecidaSalarioNegativoEFotoSemHttps() {
-		assertThat(camposInvalidos(form(0, "Lateral", -1, "http://exemplo.com/foto.webp")))
-			.containsExactlyInAnyOrder("numero", "posicao", "salarioMensalReais", "fotoUrl");
+	void rejeitaNumeroPosicaoESalarioInvalidos() {
+		assertThat(camposInvalidos(form(0, "Lateral", -1)))
+			.containsExactlyInAnyOrder("numero", "posicao", "salarioMensalReais");
 	}
 
 	@Test
 	void aplicaFormNaEntidade() {
-		Jogador j = new Jogador(form(1, "Goleiro", 375_000, null));
+		Jogador j = new Jogador(form(1, "Goleiro", 375_000));
 
 		assertThat(j.getValorMercadoEuros()).isEqualTo(11_000_000L);
 		assertThat(j.getTitulos()).containsExactly("Campeao Paulista");

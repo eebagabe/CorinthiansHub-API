@@ -78,7 +78,6 @@ public class Jogador {
 		nome = f.nome().trim();
 		posicao = f.posicao();
 		nacionalidade = f.nacionalidade();
-		fotoUrl = f.fotoUrl();
 		nomeCompleto = f.nomeCompleto();
 		nascimento = f.nascimento();
 		jogos = f.jogos();
