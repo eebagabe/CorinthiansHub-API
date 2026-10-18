@@ -1,0 +1,192 @@
+{
+  "atualizadoEm": "2026-10-18",
+  "jogadores": {
+    "1": {
+      "nomeCompleto": "Hugo de Souza Nogueira",
+      "nascimento": "1999-01-31",
+      "jogos": 139,
+      "titular": 139,
+      "jogosSemSofrerGols": 57,
+      "valorMercadoEuros": 12000000,
+      "valorMercadoAtualizadoEm": "2026-09-28",
+      "fimContrato": "2030-12-31",
+      "jogosSelecao": 2,
+      "titulosCorinthians": [
+        "Campeão da Supercopa do Brasil",
+        "Campeão da Copa do Brasil",
+        "Campeão Paulista"
+      ]
+    },
+    "40": {
+      "nomeCompleto": "Felipe Longo Fernandes da Silva",
+      "nascimento": "2005-03-05",
+      "jogos": 7,
+      "titular": 7,
+      "jogosSemSofrerGols": 2,
+      "valorMercadoEuros": 500000,
+      "valorMercadoAtualizadoEm": "2026-05-26",
+      "fimContrato": "2029-03-30",
+      "jogosSelecao": 0,
+      "titulosCorinthians": [
+        "Campeão da Copa do Brasil",
+        "Campeão da Supercopa do Brasil"
+      ]
+    },
+    "51": {
+      "nomeCompleto": "Kauê Vinicius de Souza Camargo",
+      "nascimento": "2004-02-08",
+      "jogos": 6,
+      "titular": 6,
+      "jogosSemSofrerGols": 2,
+      "valorMercadoEuros": 1000000,
+      "valorMercadoAtualizadoEm": "2026-09-28",
+      "fimContrato": "2029-12-31",
+      "jogosSelecao": 0,
+      "titulosCorinthians": [
+        "Campeão da Copa do Brasil",
+        "Campeão da Supercopa do Brasil"
+      ]
+    },
+    "2": {
+      "nomeCompleto": "Matheus França Silva",
+      "nascimento": "2000-09-08",
+      "jogos": 157,
+      "titular": 128,
+      "valorMercadoEuros": 10000000,
+      "valorMercadoAtualizadoEm": "2026-09-28",
+      "fimContrato": "2028-12-31",
+      "jogosSelecao": 3,
+      "titulosCorinthians": [
+        "Campeão da Supercopa do Brasil",
+        "Campeão da Copa do Brasil",
+        "Campeão Paulista"
+      ]
+    },
+    "3": {
+      "nomeCompleto": "Gabriel Armando de Abreu",
+      "nascimento": "1990-11-26",
+      "jogos": 42,
+      "titular": 40,
+      "valorMercadoEuros": 500000,
+      "valorMercadoAtualizadoEm": "2026-05-26",
+      "fimContrato": "2027-12-31",
+      "jogosSelecao": 0,
+      "titulosCorinthians": [
+        "Campeão da Supercopa do Brasil"
+      ]
+    },
+    "4": {
+      "nomeCompleto": "João Pedro de Sousa Rodrigues",
+      "nascimento": "2003-12-31",
+      "jogos": 40,
+      "titular": 32,
+      "valorMercadoEuros": 4000000,
+      "valorMercadoAtualizadoEm": "2026-05-26",
+      "fimContrato": "2030-12-31",
+      "jogosSelecao": 0,
+      "titulosCorinthians": [
+        "Campeão da Copa do Brasil",
+        "Campeão da Supercopa do Brasil",
+        "Campeão Paulista"
+      ]
+    },
+    "5": {
+      "nomeCompleto": "André Ramalho Silva",
+      "nascimento": "1992-02-16",
+      "jogos": 91,
+      "titular": 79,
+      "valorMercadoEuros": 600000,
+      "valorMercadoAtualizadoEm": "2026-09-28",
+      "fimContrato": "2026-12-31",
+      "jogosSelecao": 0,
+      "titulosCorinthians": [
+        "Campeão da Copa do Brasil",
+        "Campeão da Supercopa do Brasil",
+        "Campeão Paulista"
+      ]
+    },
+    "13": {
+      "nomeCompleto": "Gustavo Henrique Vernes",
+      "nascimento": "1993-03-24",
+      "jogos": 120,
+      "titular": 116,
+      "valorMercadoEuros": 600000,
+      "valorMercadoAtualizadoEm": "2026-09-28",
+      "fimContrato": "2027-12-31",
+      "jogosSelecao": 0,
+      "titulosCorinthians": [
+        "Campeão da Supercopa do Brasil",
+        "Campeão da Copa do Brasil",
+        "Campeão Paulista"
+      ]
+    },
+    "20": {
+      "nomeCompleto": "Pedro Milans Carámbula",
+      "nascimento": "2002-03-24",
+      "jogos": 11,
+      "titular": 10,
+      "valorMercadoEuros": 1500000,
+      "valorMercadoAtualizadoEm": "2026-05-26",
+      "fimContrato": "2029-12-31",
+      "jogosSelecao": 0,
+      "titulosCorinthians": [
+        "Campeão da Supercopa do Brasil"
+      ]
+    },
+    "21": {
+      "nomeCompleto": "Matheus Lima Beltrão Oliveira",
+      "nascimento": "1999-05-04",
+      "jogos": 166,
+      "titular": 138,
+      "valorMercadoEuros": 8000000,
+      "valorMercadoAtualizadoEm": "2026-09-28",
+      "fimContrato": "2027-12-31",
+      "jogosSelecao": 0,
+      "titulosCorinthians": [
+        "Campeão da Copa do Brasil",
+        "Campeão da Supercopa do Brasil",
+        "Campeão Paulista"
+      ]
+    },
+    "26": {
+      "nomeCompleto": "Fabrizio Germán Angileri",
+      "nascimento": "1994-03-15",
+      "jogos": 55,
+      "titular": 35,
+      "valorMercadoEuros": 400000,
+      "valorMercadoAtualizadoEm": "2026-05-26",
+      "fimContrato": "2026-12-31",
+      "jogosSelecao": 0,
+      "titulosCorinthians": [
+        "Campeão da Copa do Brasil",
+        "Campeão Paulista"
+      ]
+    },
+    "46": {
+      "nomeCompleto": "Hugo Ferreira de Farias",
+      "nascimento": "1997-08-29",
+      "jogos": 74,
+      "titular": 61,
+      "valorMercadoEuros": 700000,
+      "valorMercadoAtualizadoEm": "2026-05-26",
+      "fimContrato": "2026-12-31",
+      "jogosSelecao": 0,
+      "titulosCorinthians": [
+        "Campeão da Copa do Brasil",
+        "Campeão da Supercopa do Brasil",
+        "Campeão Paulista"
+      ]
+    },
+    "55": {
+      "nomeCompleto": "Iago da Silva Machado",
+      "nascimento": "2009-02-17",
+      "jogos": 2,
+      "titular": 2,
+      "valorMercadoEuros": 3000000,
+      "valorMercadoAtualizadoEm": "2026-09-28",
+      "fimContrato": "2028-04-16",
+      "jogosSelecao": 0,
+      "titulosCorinthians": []
+    }
+  }
+}
