@@ -12,4 +12,5 @@ RUN useradd --system --no-create-home app
 COPY --from=build /app/target/backend-*.jar app.jar
 USER app
 EXPOSE 8081
-ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75", "-jar", "app.jar"]
+# rede Docker da VPS nao tem IPv6; sem isso o R2 (que resolve IPv6 primeiro) falha com "Network is unreachable"
+ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75", "-Djava.net.preferIPv4Stack=true", "-jar", "app.jar"]
