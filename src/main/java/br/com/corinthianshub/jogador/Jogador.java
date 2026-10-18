@@ -47,6 +47,13 @@ public class Jogador {
 
 	private Integer jogosSelecao;
 
+	private Integer gols;
+
+	private Integer assistencias;
+
+	// so goleiros
+	private Integer penaltisDefendidos;
+
 	private Long multaNacionalReais;
 
 	private Long multaInternacionalEuros;
@@ -89,6 +96,9 @@ public class Jogador {
 		titular = f.titular();
 		jogosSemSofrerGols = f.jogosSemSofrerGols();
 		jogosSelecao = f.jogosSelecao();
+		gols = f.gols();
+		assistencias = f.assistencias();
+		penaltisDefendidos = "Goleiro".equals(posicao) ? f.penaltisDefendidos() : null;
 		multaNacionalReais = f.multaNacionalReais();
 		multaInternacionalEuros = f.multaInternacionalEuros();
 		valorAquisicaoReais = f.valorAquisicaoReais();
@@ -147,6 +157,18 @@ public class Jogador {
 
 	public Integer getJogosSelecao() {
 		return jogosSelecao;
+	}
+
+	public Integer getGols() {
+		return gols;
+	}
+
+	public Integer getAssistencias() {
+		return assistencias;
+	}
+
+	public Integer getPenaltisDefendidos() {
+		return penaltisDefendidos;
 	}
 
 	public Long getMultaNacionalReais() {

@@ -17,7 +17,7 @@ class JogadorFormTest {
 
 	private static JogadorForm form(int numero, String posicao, long salario) {
 		return new JogadorForm(numero, "Hugo Souza", posicao, "BRA", null, LocalDate.of(1999, 1, 31), 139,
-				139, 57, 2, 500_000_000L, 100_000_000L, 0L, salario, LocalDate.of(2028, 12, 31),
+				139, 57, 2, 0, 0, 7, 500_000_000L, 100_000_000L, 0L, salario, LocalDate.of(2028, 12, 31),
 				List.of("Campeao Paulista"), null);
 	}
 
@@ -44,6 +44,12 @@ class JogadorFormTest {
 		assertThat(j.getValorAquisicaoReais()).isZero();
 		assertThat(j.getTitulos()).containsExactly("Campeao Paulista");
 		assertThat(j.getAtualizadoEm()).isNotNull();
+		assertThat(j.getPenaltisDefendidos()).isEqualTo(7);
+	}
+
+	@Test
+	void penaltisDefendidosSoParaGoleiro() {
+		assertThat(new Jogador(form(9, "Atacante", 0)).getPenaltisDefendidos()).isNull();
 	}
 
 }

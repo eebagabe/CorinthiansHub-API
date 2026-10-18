@@ -1,0 +1,280 @@
+{
+  "atualizadoEm": "2026-10-18",
+  "jogadores": {
+    "1": {
+      "nome": "Hugo Souza",
+      "ogol": 569633,
+      "jogosOgol": 139,
+      "jogosApi": 140,
+      "gols": 0,
+      "assistencias": 0,
+      "penaltisDefendidos": 7
+    },
+    "2": {
+      "nome": "Matheuzinho",
+      "ogol": 620330,
+      "jogosOgol": 157,
+      "jogosApi": 159,
+      "gols": 6,
+      "assistencias": 11
+    },
+    "3": {
+      "nome": "Gabriel Paulista",
+      "ogol": 115106,
+      "jogosOgol": 42,
+      "jogosApi": 43,
+      "gols": 2,
+      "assistencias": 0
+    },
+    "4": {
+      "nome": "João Pedro",
+      "ogol": 716454,
+      "jogosOgol": 40,
+      "jogosApi": 41,
+      "gols": 2,
+      "assistencias": 1
+    },
+    "5": {
+      "nome": "André Ramalho",
+      "ogol": 183983,
+      "jogosOgol": 91,
+      "jogosApi": 92,
+      "gols": 2,
+      "assistencias": 1
+    },
+    "7": {
+      "nome": "Breno Bidon",
+      "ogol": 865117,
+      "jogosOgol": 148,
+      "jogosApi": 150,
+      "gols": 6,
+      "assistencias": 4
+    },
+    "8": {
+      "nome": "Rodrigo Garro",
+      "ogol": 657408,
+      "jogosOgol": 148,
+      "jogosApi": 150,
+      "gols": 18,
+      "assistencias": 33
+    },
+    "9": {
+      "nome": "Yuri Alberto",
+      "ogol": 554446,
+      "jogosOgol": 240,
+      "jogosApi": 242,
+      "gols": 84,
+      "assistencias": 24
+    },
+    "10": {
+      "nome": "Memphis Depay",
+      "ogol": 179819,
+      "jogosOgol": 88,
+      "jogosApi": 88,
+      "gols": 20,
+      "assistencias": 16
+    },
+    "11": {
+      "nome": "Vitinho",
+      "ogol": 196706,
+      "jogosOgol": 40,
+      "jogosApi": 40,
+      "gols": 1,
+      "assistencias": 6
+    },
+    "13": {
+      "nome": "Gustavo Henrique",
+      "ogol": 217334,
+      "jogosOgol": 120,
+      "jogosApi": 121,
+      "gols": 14,
+      "assistencias": 4
+    },
+    "14": {
+      "nome": "Raniele",
+      "ogol": 512651,
+      "jogosOgol": 152,
+      "jogosApi": 154,
+      "gols": 6,
+      "assistencias": 2
+    },
+    "18": {
+      "nome": "Pedro Raul",
+      "ogol": 551816,
+      "jogosOgol": 76,
+      "jogosApi": 78,
+      "gols": 6,
+      "assistencias": 3
+    },
+    "19": {
+      "nome": "André Carrillo",
+      "ogol": 175189,
+      "jogosOgol": 110,
+      "jogosApi": 112,
+      "gols": 3,
+      "assistencias": 6
+    },
+    "20": {
+      "nome": "Pedro Milans",
+      "ogol": 610547,
+      "jogosOgol": 11,
+      "jogosApi": 12,
+      "gols": 0,
+      "assistencias": 0
+    },
+    "21": {
+      "nome": "Matheus Bidu",
+      "ogol": 687719,
+      "jogosOgol": 166,
+      "jogosApi": 168,
+      "gols": 11,
+      "assistencias": 10
+    },
+    "23": {
+      "nome": "Matheus Pereira",
+      "ogol": 383550,
+      "jogosOgol": 34,
+      "jogosApi": 36,
+      "gols": 0,
+      "assistencias": 0
+    },
+    "26": {
+      "nome": "Fabrizio Angileri",
+      "ogol": 366634,
+      "jogosOgol": 55,
+      "jogosApi": 56,
+      "gols": 1,
+      "assistencias": 2
+    },
+    "29": {
+      "nome": "Allan",
+      "ogol": 470840,
+      "jogosOgol": 36,
+      "jogosApi": 37,
+      "gols": 0,
+      "assistencias": 1
+    },
+    "31": {
+      "nome": "Kayke",
+      "ogol": 865116,
+      "jogosOgol": 26,
+      "jogosApi": 26,
+      "gols": 2,
+      "assistencias": 1
+    },
+    "35": {
+      "nome": "Charles",
+      "ogol": 522012,
+      "jogosOgol": 75,
+      "jogosApi": 76,
+      "gols": 2,
+      "assistencias": 1
+    },
+    "37": {
+      "nome": "Kaio César",
+      "ogol": 857522,
+      "jogosOgol": 31,
+      "jogosApi": 32,
+      "gols": 3,
+      "assistencias": 3
+    },
+    "40": {
+      "nome": "Felipe Longo",
+      "ogol": 829356,
+      "jogosOgol": 7,
+      "jogosApi": 8,
+      "gols": 0,
+      "assistencias": 0,
+      "penaltisDefendidos": 0
+    },
+    "46": {
+      "nome": "Hugo Farias",
+      "ogol": 543405,
+      "jogosOgol": 74,
+      "jogosApi": 75,
+      "gols": 0,
+      "assistencias": 6
+    },
+    "48": {
+      "nome": "Gui Amorim",
+      "ogol": 198264,
+      "jogosOgol": 0,
+      "jogosApi": 1,
+      "gols": null,
+      "assistencias": null
+    },
+    "49": {
+      "nome": "André",
+      "ogol": 978426,
+      "jogosOgol": 50,
+      "jogosApi": 51,
+      "gols": 8,
+      "assistencias": 2
+    },
+    "51": {
+      "nome": "Kauê",
+      "ogol": 790126,
+      "jogosOgol": 6,
+      "jogosApi": 7,
+      "gols": 0,
+      "assistencias": 0,
+      "penaltisDefendidos": 0
+    },
+    "52": {
+      "nome": "Zakaria Labyad",
+      "ogol": 130695,
+      "jogosOgol": 17,
+      "jogosApi": 8,
+      "gols": 2,
+      "assistencias": 2
+    },
+    "54": {
+      "nome": "Luiz Gustavo (Bahia)",
+      "ogol": 972503,
+      "jogosOgol": 4,
+      "jogosApi": 6,
+      "gols": 0,
+      "assistencias": 0
+    },
+    "55": {
+      "nome": "Iago Machado",
+      "ogol": 1060560,
+      "jogosOgol": 2,
+      "jogosApi": 2,
+      "gols": 0,
+      "assistencias": 0
+    },
+    "56": {
+      "nome": "Gui Negão",
+      "ogol": 1042053,
+      "jogosOgol": 45,
+      "jogosApi": 45,
+      "gols": 7,
+      "assistencias": 2
+    },
+    "61": {
+      "nome": "Dieguinho",
+      "ogol": 1042197,
+      "jogosOgol": 42,
+      "jogosApi": 42,
+      "gols": 2,
+      "assistencias": 2
+    },
+    "77": {
+      "nome": "Jesse Lingard",
+      "ogol": 156549,
+      "jogosOgol": 29,
+      "jogosApi": 27,
+      "gols": 2,
+      "assistencias": 1
+    },
+    "80": {
+      "nome": "Alex Santana",
+      "ogol": 374827,
+      "jogosOgol": 38,
+      "jogosApi": 39,
+      "gols": 2,
+      "assistencias": 0
+    }
+  }
+}
