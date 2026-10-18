@@ -15,19 +15,23 @@ import br.com.corinthianshub.jogador.AtualizadorPtax.RespostaBcb;
 class JogadorPublicoTest {
 
 	@Test
-	void converteValorDeMercadoDeEuroParaReal() {
+	void converteMultaInternacionalDeEuroParaReal() {
 		Jogador j = mock(Jogador.class);
-		when(j.getValorMercadoEuros()).thenReturn(11_000_000L);
+		when(j.getMultaInternacionalEuros()).thenReturn(11_000_000L);
+		when(j.getMultaNacionalReais()).thenReturn(500_000_000L);
 
-		assertThat(JogadorPublico.de(j, new BigDecimal("5.7088")).valorMercadoReais()).isEqualTo(62_796_800L);
+		JogadorPublico p = JogadorPublico.de(j, new BigDecimal("5.7088"));
+
+		assertThat(p.multaInternacionalReais()).isEqualTo(62_796_800L);
+		assertThat(p.multaNacionalReais()).isEqualTo(500_000_000L); // ja esta em real
 	}
 
 	@Test
-	void semValorDeMercadoContinuaNulo() {
+	void semMultaInternacionalContinuaNula() {
 		Jogador j = mock(Jogador.class);
-		when(j.getValorMercadoEuros()).thenReturn(null); // mockito devolve 0L para Long por padrao
+		when(j.getMultaInternacionalEuros()).thenReturn(null); // mockito devolve 0L para Long por padrao
 
-		assertThat(JogadorPublico.de(j, new BigDecimal("5.7088")).valorMercadoReais()).isNull();
+		assertThat(JogadorPublico.de(j, new BigDecimal("5.7088")).multaInternacionalReais()).isNull();
 	}
 
 	@Test

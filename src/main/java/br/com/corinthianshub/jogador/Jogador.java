@@ -47,7 +47,12 @@ public class Jogador {
 
 	private Integer jogosSelecao;
 
-	private Long valorMercadoEuros;
+	private Long multaNacionalReais;
+
+	private Long multaInternacionalEuros;
+
+	// 0 = chegou sem custo; null = nao informado
+	private Long valorAquisicaoReais;
 
 	private LocalDate fimContrato;
 
@@ -84,7 +89,9 @@ public class Jogador {
 		titular = f.titular();
 		jogosSemSofrerGols = f.jogosSemSofrerGols();
 		jogosSelecao = f.jogosSelecao();
-		valorMercadoEuros = f.valorMercadoEuros();
+		multaNacionalReais = f.multaNacionalReais();
+		multaInternacionalEuros = f.multaInternacionalEuros();
+		valorAquisicaoReais = f.valorAquisicaoReais();
 		salarioMensalReais = f.salarioMensalReais();
 		fimContrato = f.fimContrato();
 		fontes = f.fontes();
@@ -142,8 +149,16 @@ public class Jogador {
 		return jogosSelecao;
 	}
 
-	public Long getValorMercadoEuros() {
-		return valorMercadoEuros;
+	public Long getMultaNacionalReais() {
+		return multaNacionalReais;
+	}
+
+	public Long getMultaInternacionalEuros() {
+		return multaInternacionalEuros;
+	}
+
+	public Long getValorAquisicaoReais() {
+		return valorAquisicaoReais;
 	}
 
 	public LocalDate getFimContrato() {
