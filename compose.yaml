@@ -1,0 +1,16 @@
+name: corinthians-hub
+
+services:
+  postgres:
+    image: 'postgres:17'
+    environment:
+      POSTGRES_DB: db_corinthians_hub
+      POSTGRES_USER: ${DB_USER:?defina DB_USER no .env}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?defina DB_PASSWORD no .env}
+    ports:
+      - '127.0.0.1:5433:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
