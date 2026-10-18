@@ -1,0 +1,41 @@
+# Producao: docker compose -f compose.prod.yaml --env-file .env.production up -d --build
+# Projeto, containers, rede e volume proprios: nao compartilha nada com outros projetos da VPS.
+name: corinthianshub-api
+
+services:
+  postgres:
+    image: postgres:17
+    container_name: corinthianshub-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: db_corinthians_hub
+      POSTGRES_USER: ${DB_USER:?defina DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?defina DB_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    # Apenas localhost (acesso externo via tunel SSH); 5432 ja e de outro projeto
+    ports:
+      - '127.0.0.1:5433:5432'
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U $${POSTGRES_USER} -d db_corinthians_hub']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: .
+    container_name: corinthianshub-api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file: .env.production
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/db_corinthians_hub
+    mem_limit: 768m
+    # Apenas localhost por enquanto; exposicao publica (ex.: Cloudflare Tunnel) fica para depois
+    ports:
+      - '127.0.0.1:8081:8081'
+
+volumes:
+  pgdata:
