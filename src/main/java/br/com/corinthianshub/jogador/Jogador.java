@@ -45,7 +45,7 @@ public class Jogador {
 
 	private Integer jogosSelecao;
 
-	private Long valorMercadoReais;
+	private Long valorMercadoEuros;
 
 	private LocalDate fimContrato;
 
@@ -53,6 +53,8 @@ public class Jogador {
 	private long salarioMensalReais;
 
 	private LocalDate atualizadoEm;
+
+	private String fontes;
 
 	// poucos titulos por jogador: carregar junto evita LazyInitializationException fora da transacao
 	@ElementCollection(fetch = FetchType.EAGER)
@@ -108,8 +110,8 @@ public class Jogador {
 		return jogosSelecao;
 	}
 
-	public Long getValorMercadoReais() {
-		return valorMercadoReais;
+	public Long getValorMercadoEuros() {
+		return valorMercadoEuros;
 	}
 
 	public LocalDate getFimContrato() {
@@ -122,6 +124,14 @@ public class Jogador {
 
 	public LocalDate getAtualizadoEm() {
 		return atualizadoEm;
+	}
+
+	public String getFontes() {
+		return fontes;
+	}
+
+	public Long getId() {
+		return id;
 	}
 
 	public List<String> getTitulos() {

@@ -11,14 +11,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class JogadorController {
 
 	private final JogadorRepository jogadores;
+	private final CotacaoRepository cotacoes;
 
-	public JogadorController(JogadorRepository jogadores) {
+	public JogadorController(JogadorRepository jogadores, CotacaoRepository cotacoes) {
 		this.jogadores = jogadores;
+		this.cotacoes = cotacoes;
 	}
 
 	@GetMapping
-	public List<Jogador> listar() {
-		return jogadores.findAllByOrderByNumero();
+	public List<JogadorPublico> listar() {
+		Cotacao euro = cotacoes.findById("EUR").orElseThrow(() -> new IllegalStateException("Cotacao EUR ausente"));
+		return jogadores.findAllByOrderByNumero().stream().map(j -> JogadorPublico.de(j, euro.getValorBrl())).toList();
 	}
 
 }
