@@ -1,5 +1,7 @@
 package br.com.corinthianshub.usuario;
 
+import java.util.Locale;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -20,7 +22,7 @@ public class AdminSeed implements ApplicationRunner {
 			throw new IllegalStateException("ADMIN_EMAIL e ADMIN_PASSWORD precisam estar definidos");
 		}
 		this.usuarios = usuarios;
-		this.email = email;
+		this.email = email.trim().toLowerCase(Locale.ROOT);
 		this.senha = senha;
 	}
 
