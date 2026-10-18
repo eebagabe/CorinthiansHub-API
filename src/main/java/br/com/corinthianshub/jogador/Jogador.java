@@ -1,6 +1,8 @@
 package br.com.corinthianshub.jogador;
 
 import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.CollectionTable;
@@ -64,6 +66,37 @@ public class Jogador {
 	private List<String> titulos;
 
 	protected Jogador() {
+	}
+
+	public Jogador(JogadorForm form) {
+		this.titulos = new ArrayList<>();
+		aplicar(form);
+	}
+
+	public void aplicar(JogadorForm f) {
+		numero = f.numero();
+		nome = f.nome().trim();
+		posicao = f.posicao();
+		nacionalidade = f.nacionalidade();
+		fotoUrl = f.fotoUrl();
+		nomeCompleto = f.nomeCompleto();
+		nascimento = f.nascimento();
+		jogos = f.jogos();
+		titular = f.titular();
+		jogosSemSofrerGols = f.jogosSemSofrerGols();
+		jogosSelecao = f.jogosSelecao();
+		valorMercadoEuros = f.valorMercadoEuros();
+		salarioMensalReais = f.salarioMensalReais();
+		fimContrato = f.fimContrato();
+		fontes = f.fontes();
+		titulos.clear();
+		titulos.addAll(f.titulos());
+		atualizadoEm = LocalDate.now(ZoneId.of("America/Sao_Paulo"));
+	}
+
+	public void trocarFoto(String url) {
+		fotoUrl = url;
+		atualizadoEm = LocalDate.now(ZoneId.of("America/Sao_Paulo"));
 	}
 
 	public int getNumero() {
