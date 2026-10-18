@@ -12,5 +12,13 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
+  # S3 local para testar upload de fotos (em producao e o Cloudflare R2); nao confere credenciais
+  s3:
+    image: 'adobe/s3mock:4.7.0'
+    environment:
+      COM_ADOBE_TESTING_S3MOCK_STORE_INITIAL_BUCKETS: ${R2_BUCKET:?defina R2_BUCKET no .env}
+    ports:
+      - '127.0.0.1:9090:9090'
+
 volumes:
   pgdata:
